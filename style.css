@@ -1,3 +1,4 @@
+/* Phone */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -45,8 +46,52 @@ section {
   min-height: 200px;
 }
 
-header, section, nav {
+header,
+section,
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* other devices */
+@media screen and (min-width: 500px) and (max-width: 899px) {
+  article {
+    flex-flow: row wrap;
+  }
+  nav {
+    flex: 100%;
+    min-height: 50px;
+  }
+  section {
+    height: 50vw;
+  }
+}
+
+/* Computer screens */
+@media screen and (min-width: 900px) {
+  article {
+    flex-flow: row wrap;
+  }
+  nav {
+    flex: 100%;
+    min-height: 50px;
+  }
+  .feature {
+    flex: calc(100vw / 3);
+    min-height: calc(100vh / 3 * 1.25);
+  }
+  #signup {
+    order: 1;
+    min-height: auto;
+    height: 150px;
+  }
+  header {
+    flex: 100vw;
+    height: 25vw;
+  }
+  /* main {
+    order: 2;
+} */
+
 }
