@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 article {
@@ -41,12 +41,11 @@ main {
 
 header,
 section {
-  flex: 3 50vw;
+  flex: 50vw;
+  min-height: 200px;
 }
 
-header,
-section,
-nav {
+header, section, nav {
   display: flex;
   justify-content: center;
   align-items: center;
