@@ -1,3 +1,53 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: #5995da;
+  flex: 1 50px;
+}
+
+header {
+  background: #b2d6ff;
+}
+
+main {
+  background: #eaedf0;
+  /* flex: 6 300px; */
+  padding: 1rem;
+}
+
+#signup {
+  background: #d6e9fe;
+}
+
+#feature-1 {
+  background: #f5cf8e;
+}
+
+#feature-2 {
+  background: #f09a9d;
+}
+
+#feature-3 {
+  background: #c8c6fa;
+}
+
+header,
+section {
+  flex: 3 50vw;
+}
+
+header,
+section,
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
